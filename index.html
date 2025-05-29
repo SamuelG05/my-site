@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Campeonato de Bairros 2025</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/bola.ico">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="fade-in">
+    <div class="logo-titulo">
+      <img src="img/logo.png" alt="Logo Campeonato" class="logo-campeonato">
+      <div class="titulo-complemento">
+        <h1>Campeonato de Bairros 2025</h1>
+        <p class="cidade">Turmalina - MG</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#proximos-jogos">Próximos Jogos</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#classificacao">Classificação</a></li>
+        <li><a href="#estatisticas">Estatísticas</a></li>
+        <li><a href="#patrocinio">Patrocinador</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="filtro-global">
+    <input type="text" id="filtro-global" placeholder="Buscar por time...">
+  </div>
+  <main>
+    <!-- Próximos Jogos -->
+    <section id="proximos-jogos" class="fade-in">
+      <h2>Próximos Jogos</h2>
+      <div id="tabela-proximos" class="card-container"></div>
+    </section>
+
+    <!-- Resultados -->
+    <section id="resultados" class="fade-in">
+      <h2>Resultados Recentes</h2>
+      <div id="tabela-resultados" class="card-container limitavel"></div>
+      <button class="botao-toggle" data-target="tabela-resultados">Mostrar mais</button>
+    </section>
+
+    <!-- Classificação -->
+    <!-- Classificação -->
+    <section id="classificacao" class="fade-in">
+      <h2>Tabela de Classificação</h2>
+      <div id="tabela-classificacao" class="card-container limitavel"></div>
+      <button class="botao-toggle" data-target="tabela-classificacao">Mostrar mais</button>
+    </section>
+
+    <!-- Estatísticas -->
+    <section id="estatisticas" class="fade-in">
+      <h2>Estatísticas dos Jogadores</h2>
+      <div id="tabela-estatisticas" class="card-container limitavel"></div>
+      <button class="botao-toggle" data-target="tabela-estatisticas">Mostrar mais</button>
+    </section>
+
+    <!-- Patrocínio -->
+    <section id="patrocinio" class="fade-in">
+      <h2>Seja um Patrocinador</h2>
+      <p>Apoie o esporte, valorize a comunidade. Patrocine o Campeonato de Bairros e fortaleça sua presença em Turmalina!</p>
+      <a 
+  href="https://wa.me/5538998643650?text=Olá!%20Tenho%20interesse%20em%20patrocinar%20o%20campeonato" 
+  class="botao" 
+  target="_blank"
+>
+  Quero Patrocinar
+</a>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>
+  Os resultados são atualizados todas as Segundas-Feiras, após o fim da rodada.
+  <span id="data-atualizacao" style="margin-left: 8px; font-weight: bold;"></span>
+</p>
+
+    <p>&copy; Este site foi desenvolvido e é mantido de forma totalmente autônoma.<br>Todos os direitos reservados.<a href="https://www.instagram.com/samuel.g05?igsh=MXI4bnlqaGRiOG00aQ==" 
+       target="_blank" 
+       style="color: #aee2c7; text-decoration: underline;">
+      Criador
+    </a></p>
+    <p>&copy; Este site tem caráter estritamente informativo.<br>Qualquer uso indevido ou de má‑fé será responsabilizado na forma da lei, com as devidas medidas judiciais.<br>Qualquer solicitação de remoção de conteúdo pode ser feita diretamento ao criador.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
