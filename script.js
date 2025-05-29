@@ -139,7 +139,7 @@ carregarDados('class', rows => {
 );
 
     const escudoSlug = slugify(time);
-    const imagemFinal = `/escudos/${escudoSlug}.png`;
+    const imagemFinal = `escudos/${escudoSlug}.png`;
 
     const card = document.createElement("div");
     card.className = "card card-classificacao";
@@ -242,8 +242,8 @@ function renderizarLista(idContainer, jogos) {
   container.innerHTML = "";
 
   jogos.forEach(jogo => {
-    const escudoA = `/escudos/${slugify(jogo.timeA)}.png`;
-    const escudoB = `/escudos/${slugify(jogo.timeB)}.png`;
+    const escudoA = `escudos/${slugify(jogo.timeA)}.png`;
+    const escudoB = `escudos/${slugify(jogo.timeB)}.png`;
 
     const card = document.createElement("div");
     card.className = "card";
