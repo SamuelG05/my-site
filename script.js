@@ -139,7 +139,7 @@ carregarDados('class', rows => {
 );
 
     const escudoSlug = slugify(time);
-    const imagemFinal = `escudos/${escudoSlug}.png`;
+    const imagemFinal = `/my-site/escudos/${escudoSlug}.png`;
 
     const card = document.createElement("div");
     card.className = "card card-classificacao";
