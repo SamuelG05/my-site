@@ -139,7 +139,7 @@ carregarDados('class', rows => {
 );
 
     const escudoSlug = slugify(time);
-    const imagemFinal = `/escudos/${escudoSlug}.png`;
+    const imagemFinal = `escudos/${escudoSlug}.png`;
 
     const card = document.createElement("div");
     card.className = "card card-classificacao";
@@ -177,7 +177,7 @@ carregarDados('jogadores', rows => {
   rows.forEach(row => {
     const [jogador, gols, time] = row.c.map(c => c?.v || "");
 
-    const escudo = `/escudos/${slugify(time)}.png`;
+    const escudo = `escudos/${slugify(time)}.png`;
 
     const card = document.createElement("div");
     card.className = "card";
